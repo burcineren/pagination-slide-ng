@@ -1,0 +1,14 @@
+.pagination-ul{
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;   
+}
+.main-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    max-height: 500px;
+}
