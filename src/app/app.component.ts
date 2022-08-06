@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentPage = 0;
+  currentPage = 0; // başlangıç değerri ataması
   images = [
     {
       title: 'Deniz kum güneş',
@@ -61,9 +61,8 @@ export class AppComponent {
       url: 'https://images.unsplash.com/photo-1646146775038-152e8b8d3ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     }
   ]
-  pageIndex(index : number)
-  {
-    return Math.abs(this.currentPage - index);
+  pageIndex(index: number) {
+    return Math.abs(this.currentPage - index) <5;
   }
   // chengePage(number : number){
   //   this.currentPage =number;
